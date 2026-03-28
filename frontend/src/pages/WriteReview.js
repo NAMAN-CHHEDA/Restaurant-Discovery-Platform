@@ -86,7 +86,8 @@ export default function WriteReview() {
     };
 
     fetchInitialRestaurants();
-  }, [restaurantId, mergeRestaurants]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [restaurantId]);
 
   const handleRestaurantSearch = async (e) => {
     e.preventDefault();
