@@ -7,7 +7,6 @@ import {
   FiExternalLink,
   FiMapPin,
   FiPhone,
-  FiDollarSign,
   FiHeart,
   FiImage,
   FiNavigation,

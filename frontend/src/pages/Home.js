@@ -35,7 +35,7 @@ const buildDedupeKey = (restaurant) => {
 };
 
 export default function Home() {
-  const { user } = useAuth();
+  useAuth();
   const [searchParams, setSearchParams] = useSearchParams();
   const [restaurants, setRestaurants] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -121,7 +121,7 @@ export default function Home() {
     if (searchParams.get('search') || searchParams.get('location')) {
       setSearchParams({}, { replace: true });
     }
-  }, []);
+  }, [searchParams, setSearchParams]);
 
   useEffect(() => {
     // Reset homepage state when logo sends a reset query.

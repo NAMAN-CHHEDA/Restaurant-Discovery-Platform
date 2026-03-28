@@ -86,7 +86,7 @@ export default function WriteReview() {
     };
 
     fetchInitialRestaurants();
-  }, [restaurantId]);
+  }, [restaurantId, mergeRestaurants]);
 
   const handleRestaurantSearch = async (e) => {
     e.preventDefault();
